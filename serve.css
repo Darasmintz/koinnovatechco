@@ -1,0 +1,320 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Background Wrapper */
+.background-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+.Training-image .background-wrapper { background-image: url('/C:/Users/NSIKAK/Desktop/Studio Image/service.png'); }
+
+/* Header */
+header {
+    background: linear-gradient(to bottom, rgba(138, 43, 226, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+    color: blueviolet;
+    padding: 13.5rem 1rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, p, label {
+    text-align: center;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-card {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.video-card.full-width {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+/* Form */
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+form button {
+    padding: 0.75rem;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover { background: #4a0072; }
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    z-index: 2;
+}
+
+footer p { margin: 0.5rem 0; }
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover { text-decoration: underline; }
+.training-body {background-image: url(/logo.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+    nav {
+        background-color: black;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a {
+        color: white;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        font-size: larger;
+        height: 50px;
+    }
+    
+    nav a :first-child {
+        margin-left: 55rem;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: black;
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .sidebar li{
+        width: 100%;
+    }
+    
+    .sidebar a {
+        width: 100%;
+    }
+    .training-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .training-heading {
+        font-size: 2em;
+        color: white;
+        margin-bottom: 30px;
+      }
+      
+      .training-card {
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 15px auto;
+        color: white;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+        max-width: 900px;
+      }
+      
+      .training-card:hover {
+        transform: translateY(-5px);
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+      
+      .training-card h3 {
+        color: #a29bfe;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+      }
+      
+      .main-container {
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+      
+      .info-card {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 30px;
+        color: white;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+      
+      .info-card:hover {
+        transform: translateY(-5px);
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+      
+      .info-card h2 {
+        font-size: 1.8em;
+        color: #a29bfe;
+        margin-bottom: 15px;
+      }
+      
+      .info-card ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      
+      .info-card ul li {
+        margin: 10px 0;
+      }
+      
+      .info-card a {
+        color: #81ecec;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      
+      .info-card a:hover {
+        color: #00cec9;
+      }
+    
+      .main-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.info-card h2 {
+  font-size: 1.8em;
+  color: #a29bfe;
+  margin-bottom: 15px;
+}
+
+.info-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-card ul li {
+  margin: 10px 0;
+}
+
+.info-card a {
+  color: #81ecec;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.info-card a:hover {
+  color: #00cec9;
+}

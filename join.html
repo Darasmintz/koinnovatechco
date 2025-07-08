@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join K.O InnoVatech's team to shape the future of tech education.">
+    <meta name="keywords" content="join us, tech education, K.O InnoVatech">
+    <title>Join Our Team | K.O InnoVatech & Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <noscript><style>.loader-container { display: none; }</style></noscript>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">K.O InnoVatech</a>
+            <div class="nav-links" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="service.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="join.html" class="active">Join Us</a>
+                <a href="training-membership.html">Training</a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" role="button">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Join Hero Section -->
+    <header class="join-hero" data-animate="fadeIn">
+        <div class="hero-content">
+            <h1>Shape the Future With Us</h1>
+            <p>Join our mission to revolutionize tech education</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Join Intro Section -->
+        <section class="join-intro" data-animate="fadeIn">
+            <div class="section-header">
+                <h2>Become Part of Our Team</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content-card">
+                <p>We're looking for passionate individuals who want to make an impact in tech education. Whether you're a developer, designer, educator, or just passionate about technology, we'd love to hear from you.</p>
+                <div class="benefits-grid">
+                    <div class="benefit-item" data-animate="fadeIn">
+                        <i class='bx bx-network-chart'></i>
+                        <h4>Collaborative Environment</h4>
+                    </div>
+                    <div class="benefit-item" data-animate="fadeIn" data-delay="0.1s">
+                        <i class='bx bx-rocket'></i>
+                        <h4>Growth Opportunities</h4>
+                    </div>
+                    <div class="benefit-item" data-animate="fadeIn" data-delay="0.2s">
+                        <i class='bx bx-globe'></i>
+                        <h4>Remote Flexibility</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form -->
+        <section class="application-section" data-animate="fadeIn">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Application Form</h2>
+                    <div class="underline"></div>
+                    <p>Complete this form to begin your journey with us</p>
+                </div>
+                <form id="join-form" class="application-form" action="https://formspree.io/f/movvrggd" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Position Interest</label>
+                        <input type="text" id="position" name="position" placeholder="E.g., Web Developer, Instructor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">Why do you want to join us? (300 words max)</label>
+                        <textarea id="motivation" name="motivation" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Submit Application <i class='bx bx-send'></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Next Steps -->
+        <section class="next-steps" data-animate="fadeIn">
+            <div class="steps-container">
+                <h3>What Happens Next?</h3>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <p>We review your application</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <p>Initial interview (virtual)</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <p>Skill assessment (if applicable)</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <p>Onboarding process</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>K.O InnoVatech & Co.</h3>
+                <p>Building the future of tech education</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Our Team</h4>
+                <p><i class='bx bx-envelope'></i> koinnovatech@yahoo.com</p>
+                <p><i class='bx bx-phone'></i> +234 808 852 0105</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="service.html">Our Services</a>
+                <a href="training-membership.html">Training Programs</a>
+                <a href="about.html">About Our Mission</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> K.O InnoVatech & Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
